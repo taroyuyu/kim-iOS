@@ -1,0 +1,17 @@
+//
+//  KIM.pch
+//  KIM
+//
+//  Created by kakawater on 2022/10/18.
+//
+
+#ifndef KIM_pch
+#define KIM_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "MBProgressHUD+HM.h"
+#import "NSString+HUTLife.h"
+#import "AppDelegate.h"
+
+#endif /* KIM_pch */

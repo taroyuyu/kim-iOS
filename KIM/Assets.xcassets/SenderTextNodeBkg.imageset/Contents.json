@@ -1,0 +1,50 @@
+{
+  "images" : [
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 31
+        },
+        "cap-insets" : {
+          "bottom" : 64,
+          "top" : 13,
+          "right" : 20,
+          "left" : 24
+        }
+      },
+      "idiom" : "iphone",
+      "filename" : "SenderTextNodeBkg~iphone.png",
+      "scale" : "1x"
+    },
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 51,
+          "top" : 52,
+          "right" : 24,
+          "left" : 11
+        }
+      },
+      "idiom" : "iphone",
+      "filename" : "SenderTextNodeBkg~ipad.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

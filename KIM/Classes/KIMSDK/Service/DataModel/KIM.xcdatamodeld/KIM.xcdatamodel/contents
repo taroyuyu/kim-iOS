@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="ChatMessage" representedClassName="KIMDBChatMessage" syncable="YES" codeGenerationType="class">
+        <attribute name="content" attributeType="String" syncable="YES"/>
+        <attribute name="messageId" attributeType="Integer 64" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="receiverAccount" attributeType="String" syncable="YES"/>
+        <attribute name="senderAccount" attributeType="String" syncable="YES"/>
+        <attribute name="state" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userDomain" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="FriendApplicantion" representedClassName="KIMDBFriendApplicantion" syncable="YES" codeGenerationType="class">
+        <attribute name="answer" attributeType="Integer 16" minValueString="0" maxValueString="2" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="applicationId" attributeType="Integer 64" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="introduction" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sponsorAccount" attributeType="String" syncable="YES"/>
+        <attribute name="state" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="submissionTime" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetAccount" attributeType="String" syncable="YES"/>
+        <attribute name="userDomain" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="FriendItem" representedClassName="KIMDBFriendItem" syncable="YES" codeGenerationType="class">
+        <attribute name="friendAccount" attributeType="String" syncable="YES"/>
+        <attribute name="userDomain" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Group" representedClassName="KIMDBGroup" syncable="YES" codeGenerationType="class">
+        <attribute name="groupDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupId" attributeType="String" syncable="YES"/>
+        <attribute name="groupMaster" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="GroupChatMessage" representedClassName="KIMDBGroupChatMessage" syncable="YES" codeGenerationType="class">
+        <attribute name="content" attributeType="String" syncable="YES"/>
+        <attribute name="groupId" attributeType="String" syncable="YES"/>
+        <attribute name="messageId" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="senderAccount" attributeType="String" syncable="YES"/>
+        <attribute name="state" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userDomain" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="GroupJoinApplication" representedClassName="KIMDBGroupJoinApplication" syncable="YES" codeGenerationType="class">
+        <attribute name="applicant" attributeType="String" syncable="YES"/>
+        <attribute name="applicantionId" attributeType="Integer 64" minValueString="0" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="groupId" attributeType="String" syncable="YES"/>
+        <attribute name="introduction" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" attributeType="Integer 16" minValueString="0" maxValueString="2" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="submissionTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userDomain" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="GroupListItem" representedClassName="KIMDBGroupListItem" syncable="YES" codeGenerationType="class">
+        <attribute name="groupId" attributeType="String" syncable="YES"/>
+        <attribute name="userDomain" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="GroupMemberItem" representedClassName="KIMDBGroupMemberItem" syncable="YES" codeGenerationType="class">
+        <attribute name="groupId" attributeType="String" syncable="YES"/>
+        <attribute name="userAccount" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TalkOffer" representedClassName="KIMDBTalkOffer" syncable="YES" codeGenerationType="class">
+        <attribute name="offerId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sponsorAccount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="submissionTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="talkType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="targetAccount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userDomain" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="KIMDBUser" syncable="YES" codeGenerationType="class">
+        <attribute name="account" attributeType="String" syncable="YES"/>
+        <attribute name="avatar" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="gender" attributeType="Integer 16" minValueString="0" maxValueString="2" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mood" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mtime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="nickName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ChatMessage" positionX="0" positionY="108" width="128" height="150"/>
+        <element name="FriendApplicantion" positionX="-18" positionY="63" width="128" height="165"/>
+        <element name="FriendItem" positionX="-36" positionY="45" width="128" height="75"/>
+        <element name="Group" positionX="18" positionY="144" width="128" height="105"/>
+        <element name="GroupChatMessage" positionX="9" positionY="117" width="128" height="150"/>
+        <element name="GroupJoinApplication" positionX="0" positionY="108" width="128" height="150"/>
+        <element name="GroupListItem" positionX="-9" positionY="99" width="128" height="75"/>
+        <element name="GroupMemberItem" positionX="36" positionY="153" width="128" height="75"/>
+        <element name="TalkOffer" positionX="-9" positionY="108" width="128" height="150"/>
+        <element name="User" positionX="-54" positionY="-9" width="128" height="135"/>
+    </elements>
+</model>
