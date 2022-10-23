@@ -153,7 +153,7 @@ typedef NS_ENUM(NSUInteger,VideoChatViewControllerMode)
 //                             &audioRouteOverride);
     
     
-    
+#if !TARGET_OS_MACCATALYST
     AVAudioSession *audioSession = [AVAudioSession sharedInstance];
     
     //默认情况下扬声器播放
@@ -164,6 +164,8 @@ typedef NS_ENUM(NSUInteger,VideoChatViewControllerMode)
     
     UInt32 audioRouteOverride = kAudioSessionProperty_OverrideCategoryDefaultToSpeaker;
     AudioSessionSetProperty(kAudioSessionProperty_OverrideAudioRoute,sizeof(audioRouteOverride),&audioRouteOverride);
+#else
+#endif
 }
 
 #pragma mark 通话配置
